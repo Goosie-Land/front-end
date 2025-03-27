@@ -80,6 +80,9 @@ button:hover {
 	background-color: #555;
 }
 
+button#saveBtn {
+	background-color: #32ba39;
+}
 
 select {
 	width: 100%;
