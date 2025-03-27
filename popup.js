@@ -75,7 +75,8 @@ document.addEventListener('DOMContentLoaded', () => {
 		{ name: 'gooseFillInput', label: 'Remplissage input' },
 		{ name: 'stealCursor', label: 'Vol du curseur' },
 		{ name: 'moveGoose', label: 'Déplacement aléatoire' },
-		{ name: 'openTab', label: 'Nouvel Onglet' }
+		{ name: 'openTab', label: 'Nouvel Onglet' },
+		{ name: 'gooseShit', label: 'Déjections' }
 	];
 
 	const actionsList = document.getElementById('actionsList');

@@ -32,7 +32,8 @@ chrome.runtime.onInstalled.addListener(() => {
 		gooseFillInput: { enabled: true, weight: 30 },
 		stealCursor: { enabled: true, weight: 0 },
 		moveGoose: { enabled: true, weight: 45 },
-		openTab: { enabled: true, weight: 5 }
+		openTab: { enabled: true, weight: 5 },
+		gooseShit: { enabled: true, weight: 20 },
 	};
 
 	chrome.storage.local.set({ gooseChaosConfig: defaultConfig });

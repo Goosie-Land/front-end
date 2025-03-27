@@ -23,7 +23,8 @@
     {
       "resources": [
         "goose.gif",
-        "fuck-cursor.png"
+        "fuck-cursor.png",
+        "goose-shit.png"
       ],
       "matches": [
         "<all_urls>"
