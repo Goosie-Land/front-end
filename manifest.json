@@ -3,8 +3,15 @@
   "name": "Goose Chaos Web",
   "version": "1.0",
   "description": "Unleash chaos like Goose Desktop, but in your browser!",
-  "permissions": ["scripting", "activeTab", "storage"],
-  "host_permissions": ["<all_urls>"],
+  "permissions": [
+    "scripting",
+    "activeTab",
+    "storage",
+    "tabs"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
   "action": {
     "default_title": "Honk!",
     "default_popup": "popup.html"
@@ -14,15 +21,23 @@
   },
   "web_accessible_resources": [
     {
-      "resources": ["goose.gif", "fuck-cursor.png"],
-      "matches": ["<all_urls>"]
+      "resources": [
+        "goose.gif",
+        "fuck-cursor.png"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
     }
   ],
   "content_scripts": [
     {
-      "matches": ["<all_urls>"],
-      "js": ["goose.js"]
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "goose.js"
+      ]
     }
   ]
-  
 }

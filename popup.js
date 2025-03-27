@@ -75,6 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		{ name: 'gooseFillInput', label: 'Remplissage input' },
 		{ name: 'stealCursor', label: 'Vol du curseur' },
 		{ name: 'moveGoose', label: 'Déplacement aléatoire' },
+		{ name: 'openTab', label: 'Nouvel Onglet' }
 	];
 
 	const actionsList = document.getElementById('actionsList');
@@ -183,5 +184,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	document.getElementById('refreshDebugBtn').addEventListener('click', updateDebugPanel);
 	updateDebugPanel();
-	
+
 });
