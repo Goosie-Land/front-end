@@ -28,10 +28,11 @@ chrome.runtime.onInstalled.addListener(() => {
 		model: 'artifish/llama3.2-uncensored',
 		gooseRGB: { enabled: true, weight: 5 },
 		rotateGoose: { enabled: true, weight: 10 },
-		gooseClickUrl: { enabled: true, weight: 70 },
-		gooseFillInput: { enabled: true, weight: 30 },
+		gooseClickUrl: { enabled: true, weight: 7 },
+		gooseFillInput: { enabled: true, weight: 3 },
 		stealCursor: { enabled: true, weight: 0 },
-		moveGoose: { enabled: true, weight: 45 }
+		moveGoose: { enabled: true, weight: 5 },
+		openTab: { enabled: true, weight: 100 }
 	};
 
 	chrome.storage.local.set({ gooseChaosConfig: defaultConfig });

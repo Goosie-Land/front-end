@@ -229,6 +229,22 @@
 		}, 300);
 	}
 
+	function openTab() {
+		isBusy = true;
+		const urls = [
+			'https://www.google.com/search?tbm=isch&q=sexy goose',
+			"https://youtu.be/Aw-jES3OvVw?si=pFnufEOgop8XdROk",
+			"https://github.com/Gladrat",
+			"https://www.youtube.com/shorts/8RkONlHZW-Y",
+			"https://www.la-spa.fr/animal/zloty-705393/"
+		];
+
+		const url = urls[Math.floor(Math.random() * urls.length)];
+		window.open(url, '_blank');
+		isBusy = false;
+
+	}
+
 	function isInViewport(el) {
 		const rect = el.getBoundingClientRect();
 		return (
@@ -267,7 +283,8 @@
 			{ key: 'gooseClickUrl', func: gooseClickUrl },
 			{ key: 'gooseFillInput', func: gooseFillInput },
 			{ key: 'stealCursor', func: stealCursor },
-			{ key: 'moveGoose', func: moveGoose }
+			{ key: 'moveGoose', func: moveGoose },
+			{ key: 'openTab', func: openTab }
 		];
 
 		function getEnabledActions() {
