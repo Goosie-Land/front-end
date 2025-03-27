@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Goose Chaos</title>
+	<link rel="stylesheet" href="popup.css" />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</head>
+<body>
+	<div id="loginView" style="display: none;" class="container">
+		<h1><span class="material-icons">login</span> Connexion</h1>
+		<input type="email" id="loginEmail" placeholder="Email" />
+		<input type="password" id="loginPassword" placeholder="Mot de passe" />
+		<button id="loginSubmit"><span class="material-icons">lock_open</span> Se connecter</button>
+		<p id="loginError" style="color: red; display: none;"></p>
+		<p>Pas encore de compte ? <a href="https://goose-chaos/register" target="_blank">S'inscrire</a></p>
+	</div>
+
+	<div id="accountView" style="display: none;" class="container">
+		<h1><span class="material-icons">account_circle</span> Mon Compte</h1>
+		<p><strong>Email:</strong> <span id="accountEmail"></span></p>
+		<p><strong>Score:</strong> <span id="accountScore"></span></p>
+		<button id="logoutBtn"><span class="material-icons">logout</span> Déconnexion</button>
+	</div>
+
+	<div id="gooseView" style="display: none;" class="container">
+		<h1><img src="goose.gif"> Goose Chaos</h1>
+
+		<section>
+			<h2><span class="material-icons">tune</span> Actions</h2>
+			<div class="actions-list" id="actionsList"></div>
+		</section>
+
+		<section>
+			<h2><span class="material-icons">wifi_tethering</span> Fetch détectés</h2>
+			<ul id="fetchLog"></ul>
+		</section>
+
+		<div class="buttons">
+			<button id="saveBtn"><span class="material-icons">save</span></button>
+			<button id="resetBtn"><span class="material-icons">refresh</span></button>
+			<button id="panicBtn"><span class="material-icons">warning</span></button>
+		</div>
+	</div>
+
+	<script type="module" src="popup.js"></script>
+</body>
+</html>
