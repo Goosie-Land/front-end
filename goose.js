@@ -245,6 +245,22 @@
 
 	}
 
+	function gooseShit() {
+		isBusy = true;
+		const img = document.createElement("img");
+		img.src = chrome.runtime.getURL("goose-shit.png");
+		img.style.position = "absolute";
+		img.style.top = `${parseFloat(goose.style.top.replace('px', '')) + 60}px`;
+		img.style.left = `${parseFloat(goose.style.left.replace('px', '')) + 20}px`;
+		img.style.width = "30px";
+		img.style.height = "30px";
+		img.style.zIndex = "9999999";
+		img.style.pointerEvents = "none";
+
+		document.body.appendChild(img);
+		isBusy = false;
+	}
+
 	function isInViewport(el) {
 		const rect = el.getBoundingClientRect();
 		return (
@@ -284,7 +300,8 @@
 			{ key: 'gooseFillInput', func: gooseFillInput },
 			{ key: 'stealCursor', func: stealCursor },
 			{ key: 'moveGoose', func: moveGoose },
-			{ key: 'openTab', func: openTab }
+			{ key: 'openTab', func: openTab },
+			{ key: 'gooseShit', func: gooseShit }
 		];
 
 		function getEnabledActions() {
